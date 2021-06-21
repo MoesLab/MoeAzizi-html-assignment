@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moe Azizi">
+    <meta name="description" content="Conatact Spa">
+    <meta name="keywords" content="Spa, contact Spa,beauty, relaxation, The Striped Umbrella">
+
+    <title>The Striped Umbrella</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="/assets/images/su_banner.gif" alt="The Striped Umbrella banner" title="The Striped Umbrella"
+                width="950" height="139" />
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <h2> Contact Us: </h2>
+            <form action="register.php" method="POST">
+                <fieldset>
+                    <legend>Personal Information:</legend>
+                    <div>
+                        <label for="first-name">First Name:*</label>
+                        <input type="text" id="first-name" name="first-name" required maxlength="25" size="30">
+                    </div><br>
+                    <div>
+                        <label for="last-name">Last Name:*</label>
+                        <input type="text" id="last-name" name="last-name" required maxlength="25" size="30">
+                    </div><br>
+                    <div>
+                        <label for="email">Email:*</label>
+                        <input type="email" required name="email" placeholder="name@example.com" maxlength="35"
+                            size="30">
+                    </div><br>
+                    <div>
+                        Please select the music genre(s) that you like:
+                        <br>
+                        <input type="checkbox" name="music" value="classic" id="classic">
+                        <label for="classic">Classic</label>
+                        <br>
+                        <input type="checkbox" name="music" value="jazz" id="jazz">
+                        <label for="jazz">Jazz</label>
+                        <br>
+                        <input type="checkbox" name="music" value="blues" id="blues">
+                        <label for="blues">Blues</label>
+                        <br>
+                        <input type="checkbox" name="music" value="instrumental" id="instrumental">
+                        <label for="instrumental">Instrumental</label>
+
+                    </div>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Your Message:</legend>
+                    <div>
+                        <label for="intro">How did you hear about us?</label>
+                        <select name="intro" id="intro">
+                            <option value="ou" selected>Our Website</option>
+                            <option value="fr">Friends</option>
+                            <option value="tv">TV Adv.</option>
+                            <option value="ot">Other</option>
+                        </select>
+                    </div><br>
+
+                    <div>
+                        Would you recommend us to your friends:
+                        <br>
+                        <input type="radio" checked name="recomm" value="yes">Yes
+                        <input type="radio" name="recomm" value="no">No
+                        <input type="radio" name="recomm" value="maybe">Maybe
+                    </div><br>
+
+
+                    <div>
+                        <label for="yourrequest">Your request:</label><br>
+                        <textarea name="yourrequest" id="yourrequest" cols="50" rows="5"
+                            placeholder="Please: Write your request here">
+                    </textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" checked name="sign" value="checked" id="sign">
+                        <label for="sign">Sign me up for email updates</label>
+                    </div><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form><br>
+            <div class="iframe-div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11543.467196565121!2d-79.3897577!3d43.67174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sen!2sca!4v1624246787731!5m2!1sen!2sca"
+                    width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <br>
+        </main>
+        <footer>
+            Copyright © 2019 Canadian Business College - HTML major assignment - created by: Moe Azizi - All rights
+            reserved
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
