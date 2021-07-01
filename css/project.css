@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+}
+
+/* declare golabla color variable */
+:root {
+    --Color_background_light: #cfb59b;
+    --color_background_dark:#d67c22;
+    --Color_font_dark:#2e220a;
+    --Color_font_light:#cfb59b;
+    --Color_font_highlight:#b33d3d;
+    --Color_nav_normal:#cfb59b;
+    --Color_nav_visited:#76e468;
+    --Color_nav_hover:#000000;
+    --Color_nav_active:#ffffff;
+    --Color_H1:#523a0a;
+    --Color_H2:#574623;
+    --Color_H3:#855f15;
+    --Color_Table_font_dark:#2e220a;
+    --Color_Table_font_light:#cfb59b;
+    --Color_Table_background_light:#d8af85;
+    --Color_Table_background_dark:#c58b52;
+
+
+}
+
+body{
+    color:var(--Color_font_dark);
+    background-color: var(--Color_background_light);
+    background-image: url("../assets/images/dark-wood5.jpg");
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container {
+    max-width: 1000px;
+    background-color: var(--Color_background_light);
+    margin-top: 5;
+    margin-bottom: 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content {
+    line-height: 1.4em;
+    padding: 10px;
+}
+header, #main-nav, footer{
+    background-color: var(--color_background_dark);
+    color: var(--Color_font_light); 
+}
+#main-nav>ul {
+    margin: 0;
+    padding: 5px;
+}
+#main-nav ul li {
+    margin-right: 40px;
+    text-transform: uppercase;
+    overflow: hidden;
+    display: inline;
+
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--Color_font_light);
+
+}#main-nav a:normal {
+    color: var(--Color_nav_normal);
+    font-weight: bold;
+}
+#main-nav a:visited {
+    color: var(--Color_nav_visited);
+    font-weight: bold;
+}
+#main-nav a:hover {
+    color: var(--Color_nav_hover);
+    font-weight: bolder;
+}
+#main-nav a:active {
+    color: var(--Color_nav_active);
+    font-weight: bolder;
+}
+h1 {
+    color: var(--Color_H1);
+    margin: 10px;
+    text-transform: uppercase;
+}
+h2 {
+    color: var(--Color_H2);
+    margin: 10px;
+    text-transform: uppercase;
+}
+h3 {
+    color: var(--Color_H3);
+    margin: 10px;
+    text-transform: uppercase;
+}
+.img-centre {
+
+}
+video {
+
+}
+table {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border:1px solid var(--Color_font_dark);
+}
+table td, table th {
+    border:1px solid var(--Color_font_dark);
+    padding: 2px 5px;
+    background-color:var(--Color_Table_background_light);
+}
+
+table th, table tfoot td {
+    text-transform: uppercase;
+    background-color:var(--Color_Table_background_dark);
+    font-weight: normal;
+    color: var(--Color_Table_font_light);
+}
+dl dt {
+    font-weight: bold;
+}
+
