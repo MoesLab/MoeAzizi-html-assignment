@@ -20,8 +20,6 @@
     --Color_Table_font_light:#cfb59b;
     --Color_Table_background_light:#d8af85;
     --Color_Table_background_dark:#c58b52;
-
-
 }
 
 body{
@@ -42,10 +40,17 @@ body{
 .content {
     line-height: 1.4em;
     padding: 10px;
+
 }
 header, #main-nav, footer{
     background-color: var(--color_background_dark);
     color: var(--Color_font_light); 
+    
+}
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #main-nav>ul {
     margin: 0;
@@ -94,10 +99,23 @@ h3 {
     margin: 10px;
     text-transform: uppercase;
 }
+
 .img-centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+    width: 80%;
 
 }
 video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px ;
 
 }
 table {
@@ -107,6 +125,7 @@ table {
     margin-top: 10px;
     margin-bottom: 10px;
     border:1px solid var(--Color_font_dark);
+    border-collapse: collapse;
 }
 table td, table th {
     border:1px solid var(--Color_font_dark);
@@ -119,6 +138,7 @@ table th, table tfoot td {
     background-color:var(--Color_Table_background_dark);
     font-weight: normal;
     color: var(--Color_Table_font_light);
+    text-align: center;
 }
 dl dt {
     font-weight: bold;
@@ -129,8 +149,8 @@ footer {
     padding: 1px 0px;
 }
 .iframe-div {
-    display: block;
-    align-content: center;
+    text-align: center;
+    margin: 10px 0;
 
 }
 fieldset {
@@ -147,6 +167,7 @@ legend{
     background-color:var(--color_background_dark);
     border-radius: 8px;
     font-style: italic;
+    font-family:monospace;
     margin: 0 10px;
     padding: 0 5px;   
 }
